@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tPing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="tPingText" />
+
+    <EditText
+        android:id="@+id/tPingCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tPing"
+        android:layout_below="@+id/tPing"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/tHint"
+        android:inputType="text" >
+    </EditText>
+
+    <Button
+        android:id="@+id/bPing"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tPingCommand"
+        android:layout_below="@+id/tPingCommand"
+        android:layout_marginTop="20dp"
+        android:text="@string/bText" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tReturnResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bPing"
+                android:layout_below="@+id/bPing"
+                android:layout_marginTop="33dp"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

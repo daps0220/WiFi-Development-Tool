@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/black"
+	>
+
+     <RelativeLayout 
+        android:id="@+id/defaultLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+       
+        >   
+     
+      
+      <RelativeLayout 
+        android:id="@+id/defaultLayout1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:layout_below="@+id/defaultLayout"
+        >   
+         
+         
+     <TextView
+       
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleSSID"
+        android:textSize="15dip"
+        android:textColor="@color/gray"
+        android:layout_centerVertical="true"
+         />
+     
+    <TextView
+        android:id="@+id/blnk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/title"
+        android:text="        "
+        android:layout_centerVertical="true"
+        />
+    
+     <TextView
+        android:id="@+id/connectedSSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/blnk"
+        android:layout_alignParentRight="true" 
+        android:textColor="@color/slightblue"
+        android:textSize="25dip"
+        android:layout_centerVertical="true"
+        />
+      
+     
+     </RelativeLayout>
+     
+    
+    <TextView
+        android:id="@+id/textMsg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="20dip"
+        android:textColor="@color/gray"
+        android:text="@string/msg1" />
+    
+	    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/first_view"
+        android:layout_below="@+id/defaultLayout"
+        android:layout_width="fill_parent"
+		android:layout_height="2dp"
+		android:background="#6E6E6E" /> 
+    
+    <RelativeLayout 
+        android:id="@+id/specifiedLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+         android:layout_below="@+id/first_view"
+        >
+    
+     <RelativeLayout 
+        android:id="@+id/specifiedLayout1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        
+        >
+
+     <TextView
+         android:id="@+id/textSSID"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:text="@string/enter"
+         android:textColor="@color/gray"
+         android:textSize="20dip" />
+
+<AutoCompleteTextView
+         android:id="@+id/editSSID"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:inputType="textAutoComplete"
+         android:layout_below="@+id/textSSID"
+         android:ems="10"
+         android:textColor="@color/black"
+         android:completionThreshold="1"
+		 >
+
+         <requestFocus />
+     </AutoCompleteTextView>
+
+
+     </RelativeLayout>
+    
+    <Button
+        android:id="@+id/bOK"
+        android:layout_below="@+id/specifiedLayout1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"       
+        android:text="@string/ok"
+        android:textSize="20dip"
+        android:textColor="@color/black"
+         />
+     </RelativeLayout>
+    <View 
+        android:layout_below="@+id/specifiedLayout"
+        android:id="@+id/second_view"
+        android:layout_width="fill_parent"
+		android:layout_height="2dp"
+		android:background="#6E6E6E" /> 
+
+<RelativeLayout 
+        android:id="@+id/accesspointsLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:layout_below="@+id/second_view"
+        >   
+    <TextView
+        
+        android:id="@+id/textAPs"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textAPs"
+        android:textSize="20dip"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/orange"
+         />
+     <TextView
+        android:id="@+id/blnk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textAPs"
+        android:text="   "
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/value_ssid"
+        android:layout_toRightOf="@+id/blnk1"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:textSize="25dip"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/slightblue"
+         />
+    
+    </RelativeLayout>
+		
+     <View 
+         android:id="@+id/last_view"
+        android:layout_below="@+id/accesspointsLayout"
+        android:layout_width="fill_parent"
+		android:layout_height="2dp"
+		android:background="#6E6E6E" /> 
+  
+     
+    
+    <RelativeLayout 
+        android:id="@+id/listLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+         android:layout_below="@+id/last_view"
+        >
+    
+         <ListView 
+         android:id="@+id/ssid_list"
+     	 android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+       >
+        
+    </ListView>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/autoscan_dialog"
+     >
+
+    <TextView
+        android:id="@+id/autoscanText"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/autoscan"
+        android:textSize="20dip"
+        />
+
+    <EditText
+        android:id="@+id/secondText"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/autoscanText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:ems="10"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="@string/sec"
+         >
+
+        <requestFocus />
+    </EditText>
+    
+	<TextView
+        android:id="@+id/blnkText"
+        android:layout_below="@+id/secondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+         />
+
+    
+</RelativeLayout>

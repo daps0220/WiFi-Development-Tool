@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">WiFi_Scanner</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">WiFi Scanner</string>
+	<string name="tab1">Available Access Points</string>
+	<string name="tab2">here the selection</string>
+	<string name="Title">Title</string>
+	<string name="tab3">here the n/w diagnostics</string>
+	<string name="autoscan">AutoScan after every</string>
+	<string name="enter">Enter SSID :</string>
+	<string name="aps">Available Access Points :</string>
+	<string name="sec">in mili-seconds</string>
+	<string name="ok">OK</string>
+	<string name="no">No</string>
+	<string name="bText">Test Ping</string>
+   <string name="titleSSID">Connected SSID :</string>
+	<string name="textAPs">Access Points of </string>
+	<string name="msg1">There is no Latched SSID.</string>
+	<string name="SSID_name">SSID : %s</string>
+	<string name="tHint">Type a IP(or Server Name)</string>
+    <string name="tHintPacketNumber">Number of Packet</string>
+    <string name="tHintPacketSize">Packet Size</string>
+    <string name="tHintPacket">Number of Packet</string>
+	<string name="tPakcetText">Enter Number of Packet:</string>
+	<string name="tPacketSize">Packet Size:</string>
+	<string name="tHintSize">Enter Packet Size(in Bytes)</string>
+    <string name="tPingText">Enter IP(or Site Name):</string>
+	
+	
+</resources>
